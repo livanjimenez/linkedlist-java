@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dictionary",
+            "request": "launch",
+            "mainClass": "Dictionary",
+            "projectName": "linkedlist-java_b8143b7f"
+        }
+    ]
+}
