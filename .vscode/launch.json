@@ -5,6 +5,13 @@
             "name": "CodeLens (Launch) - Dictionary",
             "request": "launch",
             "mainClass": "Dictionary",
+            "projectName": "linkedlist-java_31d33c46"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dictionary",
+            "request": "launch",
+            "mainClass": "Dictionary",
             "projectName": "linkedlist-java_b8143b7f"
         }
     ]

@@ -2,15 +2,13 @@ import javax.swing.*;
 
 public class Dictionary {
     public static void main(String[] args) {
-        WordList newDictionary = new WordList("school");
-        newDictionary.head.word.addDefinition("An Educational Facility.");
+        WordList newDictionary = new WordList("Dictionary: A list of words and definitions!");
         viewMenu(newDictionary);
     }
 
     public static void viewMenu(WordList newDictionary) {
         String allDeletedWords = "";
         for (String words : newDictionary.deletedWords) {
-            // System.out.println(words);
             allDeletedWords += words + "\n";
         }
         JTextArea deletedWordsList = new JTextArea(allDeletedWords);
@@ -18,7 +16,7 @@ public class Dictionary {
 
         String[] options = { "Dictionary", "Deleted", "Cancel" };
         int response1 = JOptionPane.showOptionDialog(null,
-                "Welcome to the Dictionary App\n\n" + "Dictionary: shows dictionary options"
+                "Welcome, this is the Dictionary\n\n" + "Dictionary: shows dictionary options"
                         + "\nDeleted: Shows a list of all deprecated words from the Dictionary",
                 "Dictionary Program", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
 
@@ -44,7 +42,7 @@ public class Dictionary {
                 } else {
                     System.exit(0);
                 }
-                // System.out.println(delWords);
+                System.out.println(delWords);
             }
         } else if (response1 == JOptionPane.CLOSED_OPTION || response1 == JOptionPane.CANCEL_OPTION) {
             System.exit(0);
